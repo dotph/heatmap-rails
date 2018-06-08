@@ -18,6 +18,6 @@ class PointsController < ApplicationController
         HeatMap.create(path: params[:scroll_data]["#{i}"][:path], click_type: 'scroll',xpath: params[:scroll_data]["#{i}"][:xpath], offset_x: params[:scroll_data]["#{i}"][:offset_x], offset_y: params[:scroll_data]["#{i}"][:offset_y])
       end
     end
+    head :ok
   end
-  head :ok
 end
